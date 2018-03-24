@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'LoggerStandalone.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkxvZ2dlclN0YW5kYWxvbmUuam5scCI+DQogICAgPGluZm9ybWF0aW9uPg0KICAgICAgICA8dGl0bGU+TG9nZ2VyU3RhbmRhbG9uZTwvdGl0bGU+DQogICAgICAgIDx2ZW5kb3I+bWluaWR1ZGUzNDwvdmVuZG9yPg0KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICAgIDwvaW5mb3JtYXRpb24+DQogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQogICAgPHJlc291cmNlcz4NCiAgICAgICAgPGoyc2UgdmVyc2lvbj0iOS4wLjErIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgICAgIDxqYXIgaHJlZj0iTG9nZ2VyU3RhbmRhbG9uZS5qYXIiIHNpemU9IjIwNzAyIiBkb3dubG9hZD0iZWFnZXIiLz4NCiAgICA8L3Jlc291cmNlcz4NCiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJsb2dnZXJzdGFuZGFsb25lLkxvZ2dlclN0YW5kYWxvbmUiIG5hbWU9IkxvZ2dlclN0YW5kYWxvbmUiLz4NCjwvam5scD4NCg0K'
+            },
+            {
+                javafx : '9.0.1+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedloggerstandalone() {
+        dtjava.embed(
+            {
+                id : 'loggerstandalone',
+                url : 'LoggerStandalone.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkxvZ2dlclN0YW5kYWxvbmUuam5scCI+DQogICAgPGluZm9ybWF0aW9uPg0KICAgICAgICA8dGl0bGU+TG9nZ2VyU3RhbmRhbG9uZTwvdGl0bGU+DQogICAgICAgIDx2ZW5kb3I+bWluaWR1ZGUzNDwvdmVuZG9yPg0KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICAgIDwvaW5mb3JtYXRpb24+DQogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQogICAgPHJlc291cmNlcz4NCiAgICAgICAgPGoyc2UgdmVyc2lvbj0iOS4wLjErIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgICAgIDxqYXIgaHJlZj0iTG9nZ2VyU3RhbmRhbG9uZS5qYXIiIHNpemU9IjIwNzAyIiBkb3dubG9hZD0iZWFnZXIiLz4NCiAgICA8L3Jlc291cmNlcz4NCiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJsb2dnZXJzdGFuZGFsb25lLkxvZ2dlclN0YW5kYWxvbmUiIG5hbWU9IkxvZ2dlclN0YW5kYWxvbmUiLz4NCjwvam5scD4NCg0K'
+            },
+            {
+                javafx : '9.0.1+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedloggerstandalone);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>LoggerStandalone</b>
+        </h2>
+        <b>Webstart:</b><a href="LoggerStandalone.jnlp" onclick="return launchApplication('LoggerStandalone.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
